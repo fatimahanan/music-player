@@ -53,6 +53,7 @@ class MusicPlayerFragment : Fragment() {
             Log.d("MusicPlayerFragment", "Pause button clicked")
             musicService?.pause()
         }
+
         Log.d("MusicPlayerFragment", "Fragment view created")
         return view
     }

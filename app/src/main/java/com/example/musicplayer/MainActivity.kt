@@ -5,11 +5,15 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.example.musicplayerservice.MusicServiceAIDL
 
 
@@ -41,11 +45,9 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(false);
         supportActionBar?.hide()
 
-
         val intent = Intent("com.example.musicplayerservice.MusicPlayerService")
         intent.setPackage("com.example.musicplayerservice")
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
-
     }
 
     override fun onDestroy() {
