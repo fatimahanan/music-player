@@ -5,6 +5,12 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+<<<<<<< HEAD
+      <SelectionState runConfigName="MusicPlayerFragmentTest">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+=======
+>>>>>>> c99e90e0f7a5af89954f547990ba66e2dcc1f8ca
     </selectionStates>
   </component>
 </project>
